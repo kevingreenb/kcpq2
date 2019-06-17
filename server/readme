@@ -1,0 +1,72 @@
+How was this folder created?
+    1) npm init
+    2) npm install --save express
+
+How is Node different than Express? 
+    Node is Javascript runtime, it executes js outside of the browser.
+    Express uses Node.js makes using Node.js a little bit easier to write servers
+    Everything found within Express can be done without Node alone.
+
+Generating Express App
+    Index.js is usually the root file.
+
+How to run this app?
+    npm index.js
+
+Where is it served?
+    localhost:5000
+
+How to deploy application?
+    I will use heroku.com
+Checklist
+-Dynamic port binding
+-Specific Node Environment
+  "engines": {
+    "node": "8.1.1",
+    "npm": "5.0.3"
+  }
+-Specify start script 
+  "scripts": {
+    "start" : "node index.js"
+  }
+  -Create .gitignore file
+    node_modules
+
+Install Heroku CLI
+    brew tap heroku/brew && brew install heroku
+    heroku login
+    heroku create
+    https://blooming-citadel-52488.herokuapp.com/
+    https://git.heroku.com/blooming-citadel-52488.git
+    git remote add heroku https://git.heroku.com/blooming-citadel-52488.git
+    git push heroku master
+    https://blooming-citadel-52488.herokuapp.com/
+    Target domain
+    powerful-avocado-158jnx8mzp7treiv6f9mp0pr.herokudns.com
+
+
+
+Redeploy application
+    1) Check for un-comitted files
+    - git status
+    2) git add .
+    3) git commit -m "changed something"
+    4) git push heroku master
+
+How to authenticate ?
+  Google OAuth
+
+Google OAuth ****************
+
+We will used Passport JS to automate cetain tasks
+Passport uses passport and passport strategy which are 2
+seperate libraries.
+-passport: general helpers for handling auth in Express
+-passport strategy: authenticating for a specific method, google in this case
+strategy is a module that helps authenticate with a specific provider
+- OAuth 2.0
+
+Nodemon allows auto-refresh
+  - npm run dev
+
+
